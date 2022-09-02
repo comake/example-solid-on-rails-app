@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comake/skl-app-server/^0.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comake/example-solid-on-rails-app/^0.0.0/components/context.jsonld"
+  ],
+  "import": [
+    "files-sklas:config/app/main/default.json",
+    "files-sklas:config/app/initialize/default.json",
+    "files-sklas:config/app/finalize/default.json",
+    "files-sklas:config/app/variables/default.json",
+    "files-sklas:config/app/path/default.json",
+    "files-sklas:config/http/handler/default.json",
+    "files-sklas:config/http/static/default.json",
+
+    "files-example:config/http/routes/routes.json",
+
+    "files-sklas:config/http/error-handler.json",
+    "files-sklas:config/http/response-writer.json",
+    "files-sklas:config/http/request-parser.json",
+    "files-sklas:config/server/middleware/default.json",
+    "files-sklas:config/server/server-factory/default.json",
+    "files-sklas:config/storage/key-value/memory.json",
+
+    "files-example:config/storage/data-mapper/type-orm.json",
+
+    "files-sklas:config/jobs/scheduler/default.json",
+    "files-sklas:config/jobs/bull.json",
+    "files-sklas:config/util/variables/default.json",
+    "files-sklas:config/util/logging/winston.json"
+  ],
+  "@graph": [
+    {
+      "comment": [
+        "An example of a custom configuration for a Solid on Rails Server.",
+        "Note that the routes and type-orm data mapper configs have been customized here."
+      ]
+    }
+  ]
+}

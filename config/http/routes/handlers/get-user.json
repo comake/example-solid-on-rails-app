@@ -1,0 +1,20 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comake/skl-app-server/^0.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comake/example-solid-on-rails-app/^0.0.0/components/context.jsonld"
+  ],
+  "@graph": [
+    {
+      "@id": "urn:sold-on-rails-example:default:GetUserHandler",
+      "@type": "RouteHandler",
+      "route": {
+        "path": "/users/:id",
+        "method": "GET"
+      },
+      "handler": {
+        "@type": "GetUserHandler",
+        "dataMapper": { "@id": "urn:skl-app-server:default:DataMapper" }
+      }
+    }
+  ]
+}
